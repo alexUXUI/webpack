@@ -1,0 +1,22 @@
+{
+  "name": "webpack-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "prepublish": "lerna bootstrap",
+    "start": "lerna run start --parallel"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "lerna": "^7.3.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
